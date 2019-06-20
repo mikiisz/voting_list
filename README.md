@@ -16,4 +16,4 @@ https://wybory.gov.pl/pe2019/pl/dane_w_arkuszach
 * [Extracting data](#extracting-data)
 
 ## Extracting data
-After dowloading raw packages we need to procces them in order to get valid data that represent ~ 14 milions Polish voters from election to the European Parliament. To achive that we need to use <b> split_votes.py </b> file. Result data looks like this and represent each signle voter:
+After dowloading raw packages we need to procces them in order to get valid data that represent approximately 14 milions Polish voters from election to the European Parliament. To achive that we need to use <b> split_votes.py </b> file. Result data looks like this and represent each signle voter:
