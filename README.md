@@ -69,8 +69,7 @@ Ressult looks like this.
 
 ## Graphs
 ### Płeć kandydata a zdobyte poparcie
-![Alt text](./graphs/płeć_a_głosy.svg)
-<img src="https://raw.githubusercontent.com/mikiisz/voting_list/master/graphs/płeć_a_głosy.svg">
+![płeć_a_głosy.svg](./graphs/płeć_a_głosy.svg)
 <i>płeć_a_głosy.svg</i>
 
 
