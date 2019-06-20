@@ -1,0 +1,15 @@
+plot-bar-graph 
+plot-bar-graph 
+plot-bar-graph 
+plot-bar-graph 
+exit
+exit
+plot-bar-graph --csv-file-path ../parties/joined_parties.csv --xaxis-mode 1 --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496
+exit
+plot-bar-graph --csv-file-path ../parties/joined_parties.csv --xaxis-mode 1 --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496
+plot-bar-graph --csv-file-path ../parties/joined_parties.csv --xaxis-mode 1 --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496
+plot-bar-graph --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode 2 --xaxis 7 --yaxis-left 9 --yaxis-right 10 --yaxis-top 0 --yaxis-bottom 866
+plot-bar-graph --csv-file-path ../parties/joined_parties.csv --xaxis-mode 1 --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496
+plot-bar-graph --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode 2 --xaxis 7 --yaxis-left 9 --yaxis-right 10 --yaxis-top 0 --yaxis-bottom 866
+plot-bar-graph --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode 2 --xaxis 7 --yaxis-left 9 --yaxis-right 10 --yaxis-top 0 --yaxis-bottom 866
+plot-bar-graph --csv-file-path ../parties/joined_parties.csv --xaxis-mode 1 --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496
