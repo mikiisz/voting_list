@@ -31,8 +31,7 @@ We are storing informations about:
 * TERYT
 * JEDNOSTKA TERYTORIALNA
 * GŁOSOWANIE PRZEZ POMOCNIKA
-* GŁOSOWANIE NA POD![Alt text](./controllers_brief.svg)
-<img src="./controllers_brief.svg">STAWIE ZAŚWIADCZENIA
+* GŁOSOWANIE NA PODSTAWIE ZAŚWIADCZENIA
 * GŁOS NIEWAŻNY (oraz jego rodzaje)
 * PARTIA
 
