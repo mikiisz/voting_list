@@ -31,7 +31,8 @@ We are storing informations about:
 * TERYT
 * JEDNOSTKA TERYTORIALNA
 * GŁOSOWANIE PRZEZ POMOCNIKA
-* GŁOSOWANIE NA PODSTAWIE ZAŚWIADCZENIA
+* GŁOSOWANIE NA POD![Alt text](./controllers_brief.svg)
+<img src="./controllers_brief.svg">STAWIE ZAŚWIADCZENIA
 * GŁOS NIEWAŻNY (oraz jego rodzaje)
 * PARTIA
 
@@ -68,7 +69,8 @@ Ressult looks like this.
 
 ## Graphs
 ### Płeć kandydata a zdobyte poparcie
-![płeć_a_głosy.svg](https://raw.githubusercontent.com/mikiisz/voting_list/master/graphs/płeć_a_głosy.svg)
+<img src="https://raw.githubusercontent.com/mikiisz/voting_list/master/graphs/płeć_a_głosy.svg">
 <i>płeć_a_głosy.svg</i>
+
 
 
