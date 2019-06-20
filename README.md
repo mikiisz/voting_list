@@ -14,6 +14,7 @@ https://wybory.gov.pl/pe2019/pl/dane_w_arkuszach
 
 ## Table of contents
 * [Extracting data](#extracting-data)
+* [Joining data](#joining-data)
 
 ## Extracting data
 After dowloading raw packages we need to procces them in order to get valid data that represent approximately 14 milions Polish voters from election to the European Parliament. To achive that we need to use <b> split_votes.py </b> file. Result data looks like this and represent each signle voter:
@@ -33,7 +34,7 @@ We are storing informations about:
 We do not store information about candidates and parties in same file. <b> Split_votes.py </b> generates also addictiona data file for candidates only, whitch looks like this:
 
 ![splited_candidates.py](https://raw.githubusercontent.com/mikiisz/voting_list/master/screenshots/splited_candidates.png)
-<i><Splited_candidates.csv</i>
+<i>Splited_candidates.csv</i>
   
  We store informations about:
  * ID - represents signle voter
@@ -47,4 +48,7 @@ We do not store information about candidates and parties in same file. <b> Split
  * ZAWÓD
  * ODDANY GŁOS
  
- Extracted data contains over 2 GB of data. To compress it without loosing inromation we need to use <b> split_votes.py </b>
+ Extracted data contains over 2 GB of data. To compress it without loosing information we need to use <b> split_votes.py </b>
+ 
+ ## Joining data
+ 
