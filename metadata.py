@@ -19,6 +19,19 @@ field_party = [
     'POLSKA FAIR PLAY',
 ]
 
+field_candidates = [
+    'ID',
+    'NUMER OKRĘGU',
+    'NUMER LISTY',
+    'NAZWA',
+    'NUMER NA LIŚCIE',
+    'NAZWIKO',
+    'IMIE',
+    'PŁEĆ',
+    'ZAWÓD',
+    'LICZBA GŁOSÓW'
+]
+
 all_patries = [
     'KOALICYJNY KOMITET WYBORCZY KOALICJA EUROPEJSKA PO PSL SLD .N ZIELONI '
     '- ZPOW-603-7/19',
@@ -38,7 +51,7 @@ all_patries = [
 
 
 def get_data(row):
-    data = {
+    return {
         'TERYT':
             int(row['TERYT'] or 0),
 
@@ -93,4 +106,17 @@ def get_data(row):
         'POLSKA FAIR PLAY':
             int(row[all_patries[9]] or 0),
     }
-    return data
+
+
+def get_data_canditates(row):
+    return {
+        'NUMER OKRĘGU': int(row['Numer okręgu'] or 0),
+        'NUMER LISTY': int(row['Numer listy'] or 0),
+        'NAZWA': str(row['Nazwa']),
+        'NUMER NA LIŚCIE': int(row['Numer na liście'] or 0),
+        'NAZWIKO': str(row['Nazwisko']),
+        'IMIE': str(row['Imiona']),
+        'PŁEĆ': str(row['Płeć']),
+        'ZAWÓD': str(row['Zawód']),
+        'LICZBA GŁOSÓW': int(row['Liczba głosów'] or 0)
+    }

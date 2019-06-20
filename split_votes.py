@@ -1,18 +1,18 @@
 from random import randint, sample
 from time import time
-import metadata
+import metadata as md
 import csv
 
 
 def main():
     regions_path = './csv_data/wyniki_gl_na_listy_po_gminach.csv'
     candidates_path = './csv_data/kandydaci.csv'
-    output_party_voting = 'splited_data.csv'
+    output_party_voting = 'głosy_na_partie.csv'
     output_candidates_voting = 'głosy_na_kandydatów.csv'
 
     start_time = time()
 
-    party_votes(regions_path, output_party_voting)
+    # party_votes(regions_path, output_party_voting)
     candidates_votes(candidates_path, output_candidates_voting)
 
     end_time = time()
@@ -25,21 +25,21 @@ def party_votes(input_path, output_path):
             open(input_path) as regions_csv, \
             open(output_path, 'w') as output_csv:
         regions_reader = csv.DictReader(regions_csv)
-        writer = csv.DictWriter(output_csv, fieldnames=metadata.field_party)
+        writer = csv.DictWriter(output_csv, fieldnames=md.field_party)
         writer.writeheader()
 
         vote_id = 1
         for i, row in enumerate(regions_reader):
             output_rows = []
-            data = metadata.get_data(row)
+            data = md.get_data(row)
 
             start = vote_id
-            for party in metadata.field_party[8:]:
+            for party in md.field_party[8:]:
                 vote_id = insert_parties(party, output_rows, vote_id, data)
             stop = vote_id - start
             start = 0
 
-            for value in metadata.field_party[3:5]:
+            for value in md.field_party[3:5]:
                 insert_randomized_value(start, stop, value, output_rows, data)
 
             vote_id = insert_invalid_vote(start, stop, output_rows, vote_id,
@@ -56,7 +56,44 @@ def party_votes(input_path, output_path):
 
 
 def candidates_votes(input_path, output_path):
-    pass
+    with \
+            open(input_path) as candidates_csv, \
+            open(output_path, 'w') as output_csv:
+        candidates_reader = csv.DictReader(candidates_csv)
+        writer = csv.DictWriter(output_csv, fieldnames=md.field_candidates)
+        writer.writeheader()
+
+        vote_id = 1
+        for i, row in enumerate(candidates_reader):
+            output_rows = []
+            data = md.get_data_canditates(row)
+
+            vote_id = insert_candidates(vote_id, data, output_rows)
+
+            for single_row in output_rows:
+                writer.writerow(single_row)
+
+            if not i % 100:
+                print('Processing:', vote_id, '...')
+
+            # if i > 4:
+            #     break
+
+
+def insert_candidates(vote_id, data, output_row):
+    for _ in range(data.get(md.field_candidates[9])):
+        update_row = {}
+        for value in md.field_candidates[1:9]:
+            update_row.update({
+                value: data.get(value)
+            })
+        update_row.update({
+            'ID': vote_id,
+            'LICZBA GŁOSÓW': 1
+        })
+        output_row.append(update_row)
+        vote_id += 1
+    return vote_id
 
 
 def insert_parties(party, output_row, id_vote, data):
@@ -85,7 +122,7 @@ def insert_randomized_value(id_start, id_stop, value, output_rows, data):
 
 def insert_invalid_vote(id_start, id_end, output_rows, id_vote, data):
     key = TextKeeper()
-    value_1, value_2, value_3 = metadata.field_party[5:8]
+    value_1, value_2, value_3 = md.field_party[5:8]
 
     diff = 0
     for _ in range(data.get(value_1)):
