@@ -67,5 +67,8 @@ Ressult looks like this.
 <i>Joined_candidates.csv</i>
 
 ## Graphs
-TODO
+### Płeć kandydata a zdobyte poparcie
+![płeć_a_głosy.svg](https://raw.githubusercontent.com/mikiisz/voting_list/master/graphs/płeć_a_głosy.svg)
+<i>płeć_a_głosy.svg</i>
+
 
