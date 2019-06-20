@@ -7,7 +7,7 @@ import csv
 def main():
     regions_path = './csv_data/wyniki_gl_na_listy_po_gminach.csv'
     candidates_path = './csv_data/kandydaci.csv'
-    output_party_voting = 'głosy_na_partie.csv'
+    output_party_voting = 'splited_data.csv'
     output_candidates_voting = 'głosy_na_kandydatów.csv'
 
     start_time = time()
@@ -24,7 +24,6 @@ def party_votes(input_path, output_path):
     with \
             open(input_path) as regions_csv, \
             open(output_path, 'w') as output_csv:
-
         regions_reader = csv.DictReader(regions_csv)
         writer = csv.DictWriter(output_csv, fieldnames=metadata.field_party)
         writer.writeheader()
@@ -49,11 +48,11 @@ def party_votes(input_path, output_path):
             for single_row in output_rows:
                 writer.writerow(single_row)
 
-            if not vote_id % 1e6:
+            if not i % 100:
                 print('Processing:', vote_id, '...')
 
-            if i > 4:
-                break
+            # if i > 4:
+            #     break
 
 
 def candidates_votes(input_path, output_path):
