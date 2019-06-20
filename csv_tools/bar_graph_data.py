@@ -60,9 +60,9 @@ class BarGraphDataGetter:
                         values_matrix[row_list[self.xaxis][1]].append(
                             row_list[col_id][1])
 
-            for key, val in values_matrix.items():
-                return_data[key] = {'sum': 0}
-                for item in val:
-                    return_data[key]['sum'] = return_data[key]['sum'] + int(
-                        item)
-        return return_data
+            # for key, val in values_matrix.items():
+            #     return_data[key] = {'sum': 0}
+            #     for item in val:
+            #         return_data[key]['sum'] = return_data[key]['sum'] + int(
+            #             item)
+        return values_matrix

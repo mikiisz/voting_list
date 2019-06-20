@@ -13,7 +13,8 @@ class BarGraph:
             'yaxis_right': -1,
             'yaxis_top': -1,
             'yaxis_bottom': -1,
-            'csv_file_path': ''
+            'csv_file_path': '',
+            'select_top': -1
         }
 
         # acceptable arguments
@@ -24,7 +25,8 @@ class BarGraph:
             '--yaxis-right': 'yaxis_right',
             '--yaxis-top': 'yaxis_top',
             '--yaxis-bottom': 'yaxis_bottom',
-            '--csv-file-path': 'csv_file_path'
+            '--csv-file-path': 'csv_file_path',
+            '--select-top': 'select_top'
         }
 
         # list of arguments whose can be list
@@ -36,9 +38,20 @@ class BarGraph:
         data_getter = BarGraphDataGetter(self.args_val['csv_file_path'])
         data_getter.set_params(**self.args_val)
         data = data_getter.get_data()
+        summed_data = {}
         for key, val in data.items():
-            data[key] = val['sum']
-        make_bar_graph(data)
+            summed_data[key] = {'sum': 0}
+            for item in val:
+                summed_data[key]['sum'] = summed_data[key]['sum'] + int(
+                    item)
+        for key, val in summed_data.items():
+            summed_data[key] = val['sum']
+        summed_data = OrderedDict(sorted(summed_data.items(), key=lambda
+            x: x[1], reverse=True))
+        if self.args_val['select_top'] > -1:
+            summed_data = OrderedDict(list(summed_data.items())[:self.args_val[
+                'select_top']])
+        make_bar_graph(summed_data)
         pass
 
     # parsing input arguments
@@ -50,7 +63,8 @@ class BarGraph:
             'yaxis_right': -1,
             'yaxis_top': -1,
             'yaxis_bottom': -1,
-            'csv_file_path': ''
+            'csv_file_path': '',
+            'select_top': -1
         }
 
         for i, item in enumerate(args):

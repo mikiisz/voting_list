@@ -5,12 +5,13 @@
 available_expressions = {
     "plot-bar-graph": {
         '--xaxis': {},
-        '--xaxis-mode': {},
+        '--xaxis-mode': {'1': 1, '2': 2},
         '--yaxis-left': {},
         '--yaxis-right': {},
         '--yaxis-top': {},
         '--yaxis-bottom': {},
-        '--csv-file-path': {}
+        '--csv-file-path': {},
+        '--select-top': {}
     },
     "help": {},
     "exit": {}
