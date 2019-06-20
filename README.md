@@ -70,6 +70,3 @@ Ressult looks like this.
 ### Płeć kandydata a zdobyte poparcie
 ![płeć_a_głosy.svg](./graphs/płeć_a_głosy.svg)
 <i>płeć_a_głosy.svg</i>
-
-
-
