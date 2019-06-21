@@ -102,7 +102,7 @@ Ressult looks like this.
 ![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
 
 ## Help
-To start plotting graphs use file:
+To start plotting graphs use:
 ```
 $> python3 main.py
 $> plot [tab]
