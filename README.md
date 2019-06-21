@@ -69,24 +69,42 @@ Ressult looks like this.
 
 ## Graphs
 ### Zdobyte poparcie dla partii
+```
+$> plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode vertical  --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496 --title Zdobyte_poparcie_dla_partii --xlabel Ilość_głosów --ylabel Partia
+```
 ![Zdobyte_poparcie_dla_partii.svg](./graphs/Zdobyte_poparcie_dla_partii.svg)
 Na powyższym wykresie przedstawione są liczby głosów oddanych na poszczególne partie. Nie ma tu żadnych nowości, wyniki ukazane na tym wykresie pokrywają się z wynikami przedstawianymi w polskich mediach. Znaczną przewagę nad resztą partii posiadają Prawo i Sprawiedliwość oraz Koalicja Europejska.
 
 ### Zdobyte poparcie dla partii - probka 100000
+```
+$> plot --csv-file-path ../parties/joined_parties_1000.csv --xaxis-mode vertical  --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496 --title Zdobyte_poparcie_dla_partii --xlabel Ilość_głosów --ylabel Partia
+```
 ![Zdobyte_poparcie_dla_partii_2.svg](./graphs/Zdobyte_poparcie_dla_partii_2.svg)
 Z kolei na powyższym wykresie zostały przedstawione informacje na temat rozkładu tej samej cechy (ilości ważnych głosów oddanych na poszczególną partię), jednak zostały one przygotowane na podstawie próbki liczącej 100000 wpisów z całej populacji (~14 mln wpisów). Pomimo użycia wybierania próbki na podstawie zwykłego, komputerowego pseudolosowania, uzyskany wykres mocno przypomina wykres przedstawiony powyżej (słupki dla poszczególnych partii są proporcjonalnie długie). Oczywiście z powodu wybrania tylko 100000 wpisów, zmniejszyła się również ogólna liczba głosów.
 
 ### Liczba głosów nieważnych na terytorium
+```
+$> plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --xaxis 2 --yaxis-left 5 --yaxis-right 6 --yaxis-top 0 --yaxis-bottom 2496 --select-top 20 --title Liczba_głosów_nieważnych_na_terytorium --xlabel Liczba_głosów --ylabel Jednostka_terytorialna
+```
 ![Liczba_głosów_nieważnych_na_terytorium.svg](./graphs/Liczba_głosów_nieważnych_na_terytorium.svg)
 Na powyższym wykresie zostały przedstawione 20 takich jednostek terytorialnych, gdzie ilość nieważnych głosów była największa. Nie powinno być większego zaskoczenia, że w czołówce znajdują się największe miasta Polski. Jest to oczywiście spowodowane tym, że w tych miastach mieszka bardzo dużo ludzi, stąd też liczba pomyłkowo uzupełnionych kart głosowania jest większa. Jednak są również mniejsze miasta, np. jak Gliwice czy Radom, gdzie ilość nieważnych głosów jest duża.
 
 ### Poparcie dla kandydatów (top 10)
+```
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 10 --title Poparcie_dla_kandydatów_(top_10) --xlabel Ilość_głosów --ylabel Kandydat
+```
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
 
 ### Poparcie dla kandydatów (top 30)
+```
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 30 --title Poparcie_dla_kandydatów_(top_30) --xlabel Ilość_głosów --ylabel Kandydat
+```
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
 
 ### Liczba kandydatów na partię
+```
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --count-mode 1 --title Liczba_kandydatów_na_partię --xlabel Liczba_kandydatów --ylabel Partia
+```
 ![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
 
 ### Średnia liczba głosów na kandydatów partii
