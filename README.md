@@ -89,29 +89,32 @@ $> plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --
 ![Liczba_głosów_nieważnych_na_terytorium.svg](./graphs/Liczba_głosów_nieważnych_na_terytorium.svg)
 Na powyższym wykresie zostały przedstawione 20 takich jednostek terytorialnych, gdzie ilość nieważnych głosów była największa. Nie powinno być większego zaskoczenia, że w czołówce znajdują się największe miasta Polski. Jest to oczywiście spowodowane tym, że w tych miastach mieszka bardzo dużo ludzi, stąd też liczba pomyłkowo uzupełnionych kart głosowania jest większa. Jednak są również mniejsze miasta, np. jak Gliwice czy Radom, gdzie ilość nieważnych głosów jest duża.
 
-### Poparcie dla kandydatów (top 10)
+### Poparcie dla kandydatów (top 10 & top 30)
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 10 --title Poparcie_dla_kandydatów_(top_10) --xlabel Ilość_głosów --ylabel Kandydat
 ```
-![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
+![Poparcie_dla_kandydatów_(top_10).svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
 
-### Poparcie dla kandydatów (top 30)
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 30 --title Poparcie_dla_kandydatów_(top_30) --xlabel Ilość_głosów --ylabel Kandydat
 ```
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
+
+Powyższe wykresy przedstawiają kandydatów, którzy otrzymali największe poparcie wraz z liczbą głosów na nich.
 
 ### Liczba kandydatów na partię
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --count-mode 1 --title Liczba_kandydatów_na_partię --xlabel Liczba_kandydatów --ylabel Partia
 ```
 ![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
+Powyższy wykres przedstawia liczbę osób kandydujących do Parlamentu Europejskiego należących do poszczególnych partii. Jak można wywnioskować, pierwsza piątka partii z tego wykresu zgłosiła niemalże maksymalną liczbę swoich kandydatów.
 
 ### Średnia liczba głosów na kandydatów partii
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
 ```
 ![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
+Powyższy wykres przedstawia średnią liczbę głosów oddanych na kandydatów poszczególnych partii.
 
 ### Płeć kandydatów
 ```
@@ -168,7 +171,9 @@ $> python3 main.py
 ```
 Aby móc uruchomić program, należy mieć zainstalowaną bibliotekę numpy oraz matplotlib.
 
-Do rysowania wykresów należy użyć polecenia ```plot```. Polecenie ```plot``` przyjmuje następujące parametry:
+Podczas wprowadzania komend można używać znaku tabulacji do wyświetlania podpowiedzi, oraz używać klawiszy strzałek do wybierania komend z historii.
+
+Do rysowania wykresów należy użyć polecenia ```plot```. Polecenie to przetwarza wszystkie komórki z WARTOŚCIAMI ze wskazanego zakresu, wybierając dla każdej komórki odpowiednią komórkę z ARGUMENTEM dla danej WARTOŚCI, a następnie grupuje wszystkie WARTOŚCI według ARGUMENTÓW. ARGUMENTY będą odkładane na osi Y, natomiast odpowiednio przetworzone WARTOŚCI na osi X. Polecenie ```plot``` przyjmuje następujące parametry:
 ```
   --csv-file-path path - określa, z którego pliku CSV znajdującego się w odpowiedniej 
   lokalizacji zadanej przez path mają zostać pobrane dane do wykresu
@@ -212,7 +217,7 @@ Do rysowania wykresów należy użyć polecenia ```plot```. Polecenie ```plot```
   na wykresie pudełkowym, działając na WARTOŚCIACH tego ARGUMENTU. Jeżeli ARGUMENT 
   o podanej nazwie nie istnieje, wykres nie jest rysowany.
   
-  -- title text - ustawia tytuł wykresu jako text
+  --title text - ustawia tytuł wykresu jako text
   
   --xlabel text - ustawia tytuł osi X jako text
   
