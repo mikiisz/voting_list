@@ -72,8 +72,11 @@ class BarGraph:
             for key, val in data.items():
                 proc_data[key] = {'sum': 0}
                 for item in val:
-                    proc_data[key]['sum'] = proc_data[key]['sum'] + int(
-                        item)
+                    try:
+                        proc_data[key]['sum'] = proc_data[key]['sum'] + int(
+                            item)
+                    except:
+                        pass
             for key, val in proc_data.items():
                 proc_data[key] = val['sum']
         proc_data = OrderedDict(sorted(proc_data.items(), key=lambda
