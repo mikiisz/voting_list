@@ -71,13 +71,22 @@ Ressult looks like this.
 ### Zdobyte_poparcie_dla_partii
 ![Zdobyte_poparcie_dla_partii.svg](./graphs/Zdobyte_poparcie_dla_partii.svg)
 
+### Liczba_głosów_nieważnych_na_terytorium
+![Liczba_głosów_nieważnych_na_terytorium.svg](./graphs/Liczba_głosów_nieważnych_na_terytorium.svg)
+
 ### Poparcie_dla_kandydatów_(top_10)
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
 
 ### Poparcie_dla_kandydatów_(top_30)
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
 
-### Płeć_kandydatów.svg
+### Liczba_kandydatów_na_partię
+![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
+
+### Średnia_liczba_głosów_na_kandydatów_partii
+![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
+
+### Płeć_kandydatów
 ![Płeć_kandydatów.svg](./graphs/Płeć_kandydatów.svg)
 
 ### Średnia_liczba_głosów_na_płeć
