@@ -129,3 +129,7 @@ plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal
 plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key nauczyciel_akademicki --title Box_plot_dla_zawodu_nauczyciel_akademicki --xlabel . --ylabel Liczba_głosów
 exit
 exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --count-mode 1 --title Liczba_kandydatów_na_partię --xlabel Liczba_kandydatów --ylabel Partia
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
+plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --xaxis 2 --yaxis-left 5 --yaxis-right 6 --yaxis-top 0 --yaxis-bottom 2496 --select-top 20
+plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --xaxis 2 --yaxis-left 5 --yaxis-right 6 --yaxis-top 0 --yaxis-bottom 2496 --select-top 20 --title Liczba_głosów_nieważnych_na_terytorium --xlabel Liczba_głosów --ylabel Jednostka_terytorialna
