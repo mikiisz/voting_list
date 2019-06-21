@@ -169,28 +169,48 @@ $> python3 main.py
 Aby móc uruchomić program, należy mieć zainstalowaną bibliotekę numpy oraz matplotlib.
 
 Do rysowania wykresów należy użyć polecenia ```plot```. Polecenie ```plot``` przyjmuje następujące parametry:
-
-  --csv-file-path path - określa, z którego pliku CSV znajdującego się w odpowiedniej lokalizacji zadanej przez path mają zostać pobrane dane do wykresu
+```
+  --csv-file-path path - określa, z którego pliku CSV znajdującego się w odpowiedniej 
+  lokalizacji zadanej przez path mają zostać pobrane dane do wykresu
   
-  --xaxis-mode [vertical(default)/horizontal] - określa wzajemne położenie komórek pliku CSV - ARGUMENT - WARTOŚĆ. Opcja vertical będzie wskazywać, że komórka z ARGUMENTEM będzie leżała w tej samej kolumnie co komórka z WARTOŚCIĄ, natomiast opcja horizontal będzie wskazywać, że komórka z ARGUMENTEM będzie leżała w tym samym wierszu co komórka z WARTOŚCIĄ.
+  --xaxis-mode [vertical(default)/horizontal] - określa wzajemne położenie komórek 
+  pliku CSV - ARGUMENT - WARTOŚĆ. Opcja vertical będzie wskazywać, że komórka z 
+  ARGUMENTEM będzie leżała w tej samej kolumnie co komórka z WARTOŚCIĄ, natomiast 
+  opcja horizontal będzie wskazywać, że komórka z ARGUMENTEM będzie leżała w tym 
+  samym wierszu co komórka z WARTOŚCIĄ.
   
-  --xaxis value - przy opcji vertical będzie wskazywać położenie komórki z ARGUMENTEM jako value:{id_kolumny_komórki_z_WARTOŚCIĄ}, natomiast przy opcji horizontal będzie wskazywać położenie komórki z ARGUMENTEM jako {id_wiersza_komórki_z_WARTOŚCIĄ}:value. W przypadku opcji vertical oraz value = -1 wskazywany jest wiersz nagłówkowy pliku.
+  --xaxis value - przy opcji vertical będzie wskazywać położenie komórki z ARGUMENTEM
+  jako value:{id_kolumny_komórki_z_WARTOŚCIĄ}, natomiast przy opcji horizontal będzie
+  wskazywać położenie komórki z ARGUMENTEM jako {id_wiersza_komórki_z_WARTOŚCIĄ}:value.
+  W przypadku opcji vertical oraz value = -1 wskazywany jest wiersz nagłówkowy pliku.
   
-  --yaxis-left value - wskazuje lewy bok (pierwsza kolumna wybierana) obszaru wyboru komórek z WARTOŚCIAMI
+  --yaxis-left value - wskazuje lewy bok (pierwsza kolumna wybierana) obszaru wyboru 
+  komórek z WARTOŚCIAMI
   
-  --yaxis-right value - wskazuje za-prawy bok (pierwsza kolumna niewybierana) obszaru wyboru komórek z WARTOŚCIAMI
+  --yaxis-right value - wskazuje za-prawy bok (pierwsza kolumna niewybierana) obszaru
+  wyboru komórek z WARTOŚCIAMI
   
-  --yaxis-top value - wskazuje górny bok (pierwszy wiersz wybierany) obszaru wyboru komórek z WARTOŚCIAMI
+  --yaxis-top value - wskazuje górny bok (pierwszy wiersz wybierany) obszaru wyboru 
+  komórek z WARTOŚCIAMI
   
-  --yaxis-bottom value - wskazuje za-dolny bok (pierwszy wiersz niewybierany) obszaru wyboru komórek z WARTOŚCIAMI
+  --yaxis-bottom value - wskazuje za-dolny bok (pierwszy wiersz niewybierany) obszaru
+  wyboru komórek z WARTOŚCIAMI
   
-  --select-top value(default=-1) - ogranicza zbiór argumentów dla wykresu do value największych (pod względem odpowiedniej wartości) wyników. Dla value = -1 ograniczenie nie występuje.
+  --select-top value(default=-1) - ogranicza zbiór argumentów dla wykresu do value 
+  największych (pod względem odpowiedniej wartości) wyników. Dla value = -1 ograniczenie
+  nie występuje.
   
-  --count-mode [0(default)/1] - ustawia tryb wyliczania. Włączenie tego trybu oznacza zliczenie wszystkich wystąpień danego ARGUMENTU, natomiast wyłączenie oznacza pobranie listy wszystkich WARTOŚCI dla poszczególnych ARGUMENTÓW.
+  --count-mode [0(default)/1] - ustawia tryb wyliczania. Włączenie tego trybu oznacza 
+  zliczenie wszystkich wystąpień danego ARGUMENTU, natomiast wyłączenie oznacza pobranie
+  listy wszystkich WARTOŚCI dla poszczególnych ARGUMENTÓW.
   
-  --mode [sum(default)/mean] - ustawia tryb przetwarzania danych list dla wszystkich ARGUMENTÓW. Opcja sum oznacza zsumowanie wartości listy dla każdego ARGUMENTU, natomiast opcja mean oznacza obliczenie zwykłej średniej z tych wartości.
+  --mode [sum(default)/mean] - ustawia tryb przetwarzania danych list dla wszystkich 
+  ARGUMENTÓW. Opcja sum oznacza zsumowanie wartości listy dla każdego ARGUMENTU, 
+  natomiast opcja mean oznacza obliczenie zwykłej średniej z tych wartości.
   
-  --select-key key - wybiera ARGUMENT o nazwie key i jedynie ten ARGUMENT przedstawia na wykresie pudełkowym, działając na WARTOŚCIACH tego ARGUMENTU. Jeżeli ARGUMENT o podanej nazwie nie istnieje, wykres nie jest rysowany.
+  --select-key key - wybiera ARGUMENT o nazwie key i jedynie ten ARGUMENT przedstawia 
+  na wykresie pudełkowym, działając na WARTOŚCIACH tego ARGUMENTU. Jeżeli ARGUMENT 
+  o podanej nazwie nie istnieje, wykres nie jest rysowany.
   
   -- title text - ustawia tytuł wykresu jako text
   
@@ -198,4 +218,6 @@ Do rysowania wykresów należy użyć polecenia ```plot```. Polecenie ```plot```
   
   --ylabel text - ustawia tytuł osi Y jako text
   
-  Dla parametrów --select-key, --title, --xlabel, --ylabel, w celu wprowadzenia znaku spacji w opcji danego parametru, należy zastosować znak '_'.
+Dla parametrów --select-key, --title, --xlabel, --ylabel, w celu wprowadzenia znaku 
+spacji w opcji danego parametru, należy zastosować znak '_'.
+```
