@@ -18,6 +18,7 @@ https://wybory.gov.pl/pe2019/pl/dane_w_arkuszach
 * [Extracting data](#extracting-data)
 * [Joining data](#joining-data)
 * [Graphs](#graphs)
+* [Help](#help)
 
 
 ## Extracting data
@@ -99,3 +100,10 @@ Ressult looks like this.
 
 ### Box_plot_dla_zawodu_przedsiębiorca.svg
 ![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
+
+## Help
+To start plotting graphs use file:
+```
+$> python3 main.py
+$> plot [tab]
+```
