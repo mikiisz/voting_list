@@ -68,52 +68,52 @@ Ressult looks like this.
 <i>Joined_candidates.csv</i>
 
 ## Graphs
-### Zdobyte_poparcie_dla_partii
+### Zdobyte poparcie dla partii
 ![Zdobyte_poparcie_dla_partii.svg](./graphs/Zdobyte_poparcie_dla_partii.svg)
+Na powyższym wykresie przedstawione są liczby głosów oddanych na poszczególne partie. Nie ma tu żadnych nowości, wyniki ukazane na tym wykresie pokrywają się z wynikami przedstawianymi w polskich mediach. Znaczną przewagę nad resztą partii posiadają Prawo i Sprawiedliwość oraz Koalicja Europejska.
 
-### Zdobyte_poparcie_dla_partii_probka_100000
+### Zdobyte poparcie dla partii - probka 100000
 ![Zdobyte_poparcie_dla_partii_2.svg](./graphs/Zdobyte_poparcie_dla_partii_2.svg)
+Z kolei na powyższym wykresie zostały przedstawione informacje na temat rozkładu tej samej cechy (ilości ważnych głosów oddanych na poszczególną partię), jednak zostały one przygotowane na podstawie próbki liczącej 100000 wpisów z całej populacji (~14 mln wpisów). Pomimo użycia wybierania próbki na podstawie zwykłego, komputerowego pseudolosowania, uzyskany wykres mocno przypomina wykres przedstawiony powyżej (słupki dla poszczególnych partii są proporcjonalnie długie). Oczywiście z powodu wybrania tylko 100000 wpisów, zmniejszyła się również ogólna liczba głosów.
 
-### Liczba_głosów_nieważnych_na_terytorium
+### Liczba głosów nieważnych na terytorium
 ![Liczba_głosów_nieważnych_na_terytorium.svg](./graphs/Liczba_głosów_nieważnych_na_terytorium.svg)
+Na powyższym wykresie zostały przedstawione 20 takich jednostek terytorialnych, gdzie ilość nieważnych głosów była największa. Nie powinno być większego zaskoczenia, że w czołówce znajdują się największe miasta Polski. Jest to oczywiście spowodowane tym, że w tych miastach mieszka bardzo dużo ludzi, stąd też liczba pomyłkowo uzupełnionych kart głosowania jest większa. Jednak są również mniejsze miasta, np. jak Gliwice czy Radom, gdzie ilość nieważnych głosów jest duża.
 
-### Poparcie_dla_kandydatów_(top_10)
+### Poparcie dla kandydatów (top 10)
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
 
-### Poparcie_dla_kandydatów_(top_30)
+### Poparcie dla kandydatów (top 30)
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
 
-### Liczba_kandydatów_na_partię
+### Liczba kandydatów na partię
 ![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
 
-### Średnia_liczba_głosów_na_kandydatów_partii
+### Średnia liczba głosów na kandydatów partii
 ![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
 
-### Płeć_kandydatów
+### Płeć kandydatów
 ![Płeć_kandydatów.svg](./graphs/Płeć_kandydatów.svg)
 
-### Średnia_liczba_głosów_na_płeć
+### Średnia liczba głosów na płeć
 ![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
 
-### Średnia_liczba_głosów_na_zawód
+### Średnia liczba głosów na zawód
 ![Średnia_liczba_głosów_na_zawód.svg](./graphs/Średnia_liczba_głosów_na_zawód.svg)
 
-### Liczba_kandydatów_danego_zawodu
+### Liczba kandydatów danego zawodu
 ![Liczba_kandydatów_danego_zawodu.svg](./graphs/Liczba_kandydatów_danego_zawodu.svg)
 
-### Box_plot_dla_zawodu_ekonomista
+### Box plot dla zawodu ekonomista
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Box_plot_dla_zawodu_ekonomista.svg)
 
-### Box_plot_dla_zawodu_nauczyciel_akademicki
+### Box plot dla zawodu nauczyciel akademicki
 ![Box_plot_dla_zawodu_nauczyciel_akademicki.svg](./graphs/Box_plot_dla_zawodu_nauczyciel_akademicki.svg)
 
-### Box_plot_dla_zawodu_polityk
+### Box plot dla zawodu polityk
 ![Box_plot_dla_zawodu_polityk.svg](./graphs/Box_plot_dla_zawodu_polityk.svg)
 
-### Box_plot_dla_zawodu_przedsiębiorca
-![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
-
-### Box_plot_dla_zawodu_przedsiębiorca
+### Box plot dla zawodu przedsiębiorca
 ![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
 
 ## Help
