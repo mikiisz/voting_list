@@ -71,6 +71,9 @@ Ressult looks like this.
 ### Zdobyte_poparcie_dla_partii
 ![Zdobyte_poparcie_dla_partii.svg](./graphs/Zdobyte_poparcie_dla_partii.svg)
 
+### Zdobyte_poparcie_dla_partii_probka_100000
+![Zdobyte_poparcie_dla_partii.svg_2](./graphs/Zdobyte_poparcie_dla_partii.svg_2)
+
 ### Liczba_głosów_nieważnych_na_terytorium
 ![Liczba_głosów_nieważnych_na_terytorium.svg](./graphs/Liczba_głosów_nieważnych_na_terytorium.svg)
 
