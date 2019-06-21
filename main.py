@@ -35,7 +35,8 @@ def input_mode():
 
 
 def main():
-    print("TIMETABLE-GENERATOR WIET 2019 - interactive mode")
+    print("Analizator wyników do wyborów do Parlamentu Europejskiego - "
+          "interactive mode")
 
     while True:
         input_mode()

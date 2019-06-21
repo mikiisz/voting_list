@@ -83,7 +83,8 @@ class BarGraph:
                 'select_top']])
         if self.args_val['select_key'] != '':
             for key, val in data.items():
-                box_plot(self.args_val['title'], list(map(int, val)))
+                box_plot(list(map(int, val)), self.args_val['title'], self.args_val[
+                'xlabel'], self.args_val['ylabel'])
         else:
             make_bar_graph(proc_data, self.args_val['title'], self.args_val[
                 'xlabel'], self.args_val['ylabel'])

@@ -1,10 +1,12 @@
 import matplotlib.pyplot as plt
 
 
-def box_plot(title, values):
+def box_plot(values, title, xlabel, ylabel):
     _, axs = plt.subplots()
     axs.set_title(title)
     axs.boxplot(values)
+    axs.set_xlabel(xlabel)
+    axs.set_ylabel(ylabel)
 
     plt.show()
 
