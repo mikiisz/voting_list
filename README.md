@@ -91,47 +91,74 @@ Na powyższym wykresie zostały przedstawione 20 takich jednostek terytorialnych
 
 ### Poparcie dla kandydatów (top 10)
 ```
-plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 10 --title Poparcie_dla_kandydatów_(top_10) --xlabel Ilość_głosów --ylabel Kandydat
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 10 --title Poparcie_dla_kandydatów_(top_10) --xlabel Ilość_głosów --ylabel Kandydat
 ```
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
 
 ### Poparcie dla kandydatów (top 30)
 ```
-plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 30 --title Poparcie_dla_kandydatów_(top_30) --xlabel Ilość_głosów --ylabel Kandydat
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 30 --title Poparcie_dla_kandydatów_(top_30) --xlabel Ilość_głosów --ylabel Kandydat
 ```
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
 
 ### Liczba kandydatów na partię
 ```
-plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --count-mode 1 --title Liczba_kandydatów_na_partię --xlabel Liczba_kandydatów --ylabel Partia
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --count-mode 1 --title Liczba_kandydatów_na_partię --xlabel Liczba_kandydatów --ylabel Partia
 ```
 ![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
 
 ### Średnia liczba głosów na kandydatów partii
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
+```
 ![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
 
 ### Płeć kandydatów
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --title Płeć_kandydatów --xlabel Liczba_kandydatów --ylabel Płeć --count-mode 1
+```
 ![Płeć_kandydatów.svg](./graphs/Płeć_kandydatów.svg)
 
 ### Średnia liczba głosów na płeć
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Średnia_liczba_głosów --ylabel Płeć --mode mean --title Średnia_liczba_głosów_na_płeć
+```
 ![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
 
 ### Średnia liczba głosów na zawód
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --mode mean --title Średnia_liczba_głosów_na_zawód --xlabel Średnia_liczba_głosów --ylabel Zawód
+```
 ![Średnia_liczba_głosów_na_zawód.svg](./graphs/Średnia_liczba_głosów_na_zawód.svg)
 
 ### Liczba kandydatów danego zawodu
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --count-mode 1 --title Liczba_kandydatów_danego_zawodu --xlabel Liczba_kandydatów --ylabel Zawód
+```
 ![Liczba_kandydatów_danego_zawodu.svg](./graphs/Liczba_kandydatów_danego_zawodu.svg)
 
 ### Box plot dla zawodu ekonomista
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key ekonomista --title Box_plot_dla_zawodu_ekonomista --xlabel . --ylabel Liczba_głosów
+```
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Box_plot_dla_zawodu_ekonomista.svg)
 
 ### Box plot dla zawodu nauczyciel akademicki
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key nauczyciel_akademicki --title Box_plot_dla_zawodu_nauczyciel_akademicki --xlabel . --ylabel Liczba_głosów
+```
 ![Box_plot_dla_zawodu_nauczyciel_akademicki.svg](./graphs/Box_plot_dla_zawodu_nauczyciel_akademicki.svg)
 
 ### Box plot dla zawodu polityk
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
+```
 ![Box_plot_dla_zawodu_polityk.svg](./graphs/Box_plot_dla_zawodu_polityk.svg)
 
 ### Box plot dla zawodu przedsiębiorca
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key przedsiębiorca --title Box_plot_dla_zawodu_przedsiębiorca --xlabel . --ylabel Liczba_głosów
+```
 ![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
 
 ## Help
