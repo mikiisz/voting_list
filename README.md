@@ -80,13 +80,13 @@ Ressult looks like this.
 ### Poparcie_dla_kandydatów_(top_30)
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
 
-### Liczba_kandydatów_na_partię.svg
+### Liczba_kandydatów_na_partię
 ![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
 
-### Średnia_liczba_głosów_na_kandydatów_partii.svg
+### Średnia_liczba_głosów_na_kandydatów_partii
 ![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
 
-### Płeć_kandydatów.svg
+### Płeć_kandydatów
 ![Płeć_kandydatów.svg](./graphs/Płeć_kandydatów.svg)
 
 ### Średnia_liczba_głosów_na_płeć
