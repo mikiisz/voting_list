@@ -83,22 +83,22 @@ Ressult looks like this.
 ### Średnia_liczba_głosów_na_płeć
 ![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
 
-### Średnia_liczba_głosów_na_zawód.svg
+### Średnia_liczba_głosów_na_zawód
 ![Średnia_liczba_głosów_na_zawód.svg](./graphs/Średnia_liczba_głosów_na_zawód.svg)
 
-### Liczba_kandydatów_danego_zawodu.svg
+### Liczba_kandydatów_danego_zawodu
 ![Liczba_kandydatów_danego_zawodu.svg](./graphs/Liczba_kandydatów_danego_zawodu.svg)
 
 ### Box_plot_dla_zawodu_ekonomista
 ![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Box_plot_dla_zawodu_ekonomista.svg)
 
-### Box_plot_dla_zawodu_nauczyciel_akademicki.svg
+### Box_plot_dla_zawodu_nauczyciel_akademicki
 ![Box_plot_dla_zawodu_nauczyciel_akademicki.svg](./graphs/Box_plot_dla_zawodu_nauczyciel_akademicki.svg)
 
-### Box_plot_dla_zawodu_polityk.svg
+### Box_plot_dla_zawodu_polityk
 ![Box_plot_dla_zawodu_polityk.svg](./graphs/Box_plot_dla_zawodu_polityk.svg)
 
-### Box_plot_dla_zawodu_przedsiębiorca.svg
+### Box_plot_dla_zawodu_przedsiębiorca
 ![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
 
 ## Help
