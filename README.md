@@ -67,6 +67,35 @@ Ressult looks like this.
 <i>Joined_candidates.csv</i>
 
 ## Graphs
-### Płeć kandydata a zdobyte poparcie
-![płeć_a_głosy.svg](./graphs/płeć_a_głosy.svg)
-<i>płeć_a_głosy.svg</i>
+### Zdobyte_poparcie_dla_partii
+![Zdobyte_poparcie_dla_partii.svg](./graphs/Zdobyte_poparcie_dla_partii.svg)
+
+### Poparcie_dla_kandydatów_(top_10)
+![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Poparcie_dla_kandydatów_(top_10).svg)
+
+### Poparcie_dla_kandydatów_(top_30)
+![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
+
+### Płeć_kandydatów.svg
+![Płeć_kandydatów.svg](./graphs/Płeć_kandydatów.svg)
+
+### Średnia_liczba_głosów_na_płeć
+![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
+
+### Średnia_liczba_głosów_na_zawód.svg
+![Średnia_liczba_głosów_na_zawód.svg](./graphs/Średnia_liczba_głosów_na_zawód.svg)
+
+### Liczba_kandydatów_danego_zawodu.svg
+![Liczba_kandydatów_danego_zawodu.svg](./graphs/Liczba_kandydatów_danego_zawodu.svg)
+
+### Box_plot_dla_zawodu_ekonomista
+![Box_plot_dla_zawodu_ekonomista.svg](./graphs/Box_plot_dla_zawodu_ekonomista.svg)
+
+### Box_plot_dla_zawodu_nauczyciel_akademicki.svg
+![Box_plot_dla_zawodu_nauczyciel_akademicki.svg](./graphs/Box_plot_dla_zawodu_nauczyciel_akademicki.svg)
+
+### Box_plot_dla_zawodu_polityk.svg
+![Box_plot_dla_zawodu_polityk.svg](./graphs/Box_plot_dla_zawodu_polityk.svg)
+
+### Box_plot_dla_zawodu_przedsiębiorca.svg
+![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
