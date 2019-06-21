@@ -3,15 +3,21 @@
 # auto-completion expressions list: first level - command names; second level
 # - flags names, third level - available values for particular flags
 available_expressions = {
-    "plot-bar-graph": {
+    "plot": {
         '--xaxis': {},
-        '--xaxis-mode': {'1': 1, '2': 2},
+        '--xaxis-mode': {'vertical': 1, 'horizontal': 2},
         '--yaxis-left': {},
         '--yaxis-right': {},
         '--yaxis-top': {},
         '--yaxis-bottom': {},
         '--csv-file-path': {},
-        '--select-top': {}
+        '--select-top': {},
+        '--count-mode': {'0': 0, '1': 1},
+        '--mode': {'sum': 0, 'mean': 1},
+        '--select-key': {},
+        '--title': {},
+        '--xlabel': {},
+        '--ylabel': {}
     },
     "help": {},
     "exit": {}

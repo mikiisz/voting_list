@@ -6,7 +6,7 @@ def box_plot(title, values):
     axs.set_title(title)
     axs.boxplot(values)
 
-    plt.savefig('./graphs/' + title)
+    plt.show()
 
 
 # example with 'nauczyciel' copied from .csv
@@ -43,4 +43,4 @@ votes_for_teacher = [
     984,
 ]
 
-box_plot('Głosy na nauczycieli', votes_for_teacher)
+# box_plot('Głosy na nauczycieli', votes_for_teacher)

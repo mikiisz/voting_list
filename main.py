@@ -12,7 +12,7 @@ user_command_getter = UserCommandGetter(cmd_hist_file)
 
 # program commands
 command = {
-    "plot-bar-graph": lambda x: bar_graph_command.exec_command(x),
+    "plot": lambda x: bar_graph_command.exec_command(x),
     "help": lambda x: help_command.exec_command(x),
     "exit": lambda x: exit(0),
 }

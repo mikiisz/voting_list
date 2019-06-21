@@ -15,6 +15,7 @@ class BarGraphDataGetter:
         self.yaxis_right = -1
         self.yaxis_top = -1
         self.yaxis_bottom = -1
+        self.count_mode = 0
 
     def set_params(self, **kwargs):
         for arg in kwargs:
@@ -51,18 +52,20 @@ class BarGraphDataGetter:
                     if self.xaxis_mode == BarGraphDataGetter.XAXIS_VERTICAL:
                         if vert_keys[col_id][1] not in values_matrix:
                             values_matrix[vert_keys[col_id][1]] = []
-                        values_matrix[vert_keys[
-                            col_id][1]].append(
-                            row_list[col_id][1])
+                        if self.count_mode == 0:
+                            values_matrix[vert_keys[
+                                col_id][1]].append(
+                                row_list[col_id][1])
+                        else:
+                            values_matrix[vert_keys[
+                                col_id][1]].append(1)
                     else:
                         if row_list[self.xaxis][1] not in values_matrix:
                             values_matrix[row_list[self.xaxis][1]] = []
-                        values_matrix[row_list[self.xaxis][1]].append(
-                            row_list[col_id][1])
+                        if self.count_mode == 0:
+                            values_matrix[row_list[self.xaxis][1]].append(
+                                row_list[col_id][1])
+                        else:
+                            values_matrix[row_list[self.xaxis][1]].append(1)
 
-            # for key, val in values_matrix.items():
-            #     return_data[key] = {'sum': 0}
-            #     for item in val:
-            #         return_data[key]['sum'] = return_data[key]['sum'] + int(
-            #             item)
         return values_matrix
