@@ -101,6 +101,9 @@ Ressult looks like this.
 ### Box_plot_dla_zawodu_przedsiębiorca
 ![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
 
+### Box_plot_dla_zawodu_przedsiębiorca
+![Box_plot_dla_zawodu_przedsiębiorca.svg](./graphs/Box_plot_dla_zawodu_przedsiębiorca.svg)
+
 ## Help
 To start plotting graphs use:
 ```
