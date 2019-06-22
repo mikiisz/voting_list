@@ -73,6 +73,7 @@ Ressult looks like this.
 $> plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode vertical  --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496 --title Zdobyte_poparcie_dla_partii --xlabel Ilość_głosów --ylabel Partia
 ```
 ![Zdobyte_poparcie_dla_partii.svg](./graphs/Zdobyte_poparcie_dla_partii.svg)
+##### Description
 Na powyższym wykresie przedstawione są liczby głosów oddanych na poszczególne partie. Nie ma tu żadnych nowości, wyniki ukazane na tym wykresie pokrywają się z wynikami przedstawianymi w polskich mediach. Znaczną przewagę nad resztą partii posiadają Prawo i Sprawiedliwość oraz Koalicja Europejska.
 
 ### Zdobyte poparcie dla partii - probka 100000
