@@ -81,6 +81,7 @@ Na powyższym wykresie przedstawione są liczby głosów oddanych na poszczegól
 $> plot --csv-file-path ../parties/joined_parties_1000.csv --xaxis-mode vertical  --yaxis-left 8 --yaxis-right 18 --yaxis-top 0 --yaxis-bottom 2496 --title Zdobyte_poparcie_dla_partii --xlabel Ilość_głosów --ylabel Partia
 ```
 ![Zdobyte_poparcie_dla_partii_2.svg](./graphs/Zdobyte_poparcie_dla_partii_2.svg)
+##### Description
 Z kolei na powyższym wykresie zostały przedstawione informacje na temat rozkładu tej samej cechy (ilości ważnych głosów oddanych na poszczególną partię), jednak zostały one przygotowane na podstawie próbki liczącej 100000 wpisów z całej populacji (~14 mln wpisów). Pomimo użycia wybierania próbki na podstawie zwykłego, komputerowego pseudolosowania, uzyskany wykres mocno przypomina wykres przedstawiony powyżej (słupki dla poszczególnych partii są proporcjonalnie długie). Oczywiście z powodu wybrania tylko 100000 wpisów, zmniejszyła się również ogólna liczba głosów.
 
 ### Liczba głosów nieważnych na terytorium
@@ -88,6 +89,7 @@ Z kolei na powyższym wykresie zostały przedstawione informacje na temat rozkł
 $> plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --xaxis 2 --yaxis-left 5 --yaxis-right 6 --yaxis-top 0 --yaxis-bottom 2496 --select-top 20 --title Liczba_głosów_nieważnych_na_terytorium --xlabel Liczba_głosów --ylabel Jednostka_terytorialna
 ```
 ![Liczba_głosów_nieważnych_na_terytorium.svg](./graphs/Liczba_głosów_nieważnych_na_terytorium.svg)
+##### Description
 Na powyższym wykresie zostały przedstawione 20 takich jednostek terytorialnych, gdzie ilość nieważnych głosów była największa. Nie powinno być większego zaskoczenia, że w czołówce znajdują się największe miasta Polski. Jest to oczywiście spowodowane tym, że w tych miastach mieszka bardzo dużo ludzi, stąd też liczba pomyłkowo uzupełnionych kart głosowania jest większa. Jednak są również mniejsze miasta, np. jak Gliwice czy Radom, gdzie ilość nieważnych głosów jest duża.
 
 ### Poparcie dla kandydatów (top 10 & top 30)
@@ -100,7 +102,7 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 5 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 30 --title Poparcie_dla_kandydatów_(top_30) --xlabel Ilość_głosów --ylabel Kandydat
 ```
 ![Poparcie_dla_kandydatów_(top_30).svg](./graphs/Poparcie_dla_kandydatów_(top_30).svg)
-
+##### Description
 Powyższe wykresy przedstawiają kandydatów, którzy otrzymali największe poparcie wraz z liczbą głosów na nich.
 
 ### Liczba kandydatów na partię
@@ -108,6 +110,7 @@ Powyższe wykresy przedstawiają kandydatów, którzy otrzymali największe popa
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --count-mode 1 --title Liczba_kandydatów_na_partię --xlabel Liczba_kandydatów --ylabel Partia
 ```
 ![Liczba_kandydatów_na_partię.svg](./graphs/Liczba_kandydatów_na_partię.svg)
+##### Description
 Powyższy wykres przedstawia liczbę osób kandydujących do Parlamentu Europejskiego należących do poszczególnych partii. Jak można wywnioskować, pierwsza piątka partii z tego wykresu zgłosiła niemalże maksymalną liczbę swoich kandydatów.
 
 ### Średnia liczba głosów na kandydatów partii
@@ -115,6 +118,7 @@ Powyższy wykres przedstawia liczbę osób kandydujących do Parlamentu Europejs
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
 ```
 ![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
+##### Description
 Powyższy wykres przedstawia średnią liczbę głosów oddanych na kandydatów poszczególnych partii.
 
 ### Płeć kandydatów
