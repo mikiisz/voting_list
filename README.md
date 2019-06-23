@@ -119,25 +119,30 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ```
 ![Średnia_liczba_głosów_na_kandydatów_partii.svg](./graphs/Średnia_liczba_głosów_na_kandydatów_partii.svg)
 ##### Description
-Powyższy wykres przedstawia średnią liczbę głosów oddanych na kandydatów poszczególnych partii.
+Powyższy wykres przedstawia średnią liczbę głosów oddanych na kandydatów poszczególnych partii. Patrząc na poprzednie wykresy - Liczba kandydatów na partię oraz Zdobyte poparcie dla partii - można stwierdzić, iż dla pięciu pierwszych partii słupki mają proporcjonalną długość do długości słupków z wykresu Zdobyte poparcie dla partii. Jest to oczywiste spostrzeżenie, i nie można tego zauważyć dla pozostałych partii, ponieważ w tych partiach liczba kandydatur była znacząco mniejsza.
 
 ### Płeć kandydatów
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --title Płeć_kandydatów --xlabel Liczba_kandydatów --ylabel Płeć --count-mode 1
 ```
 ![Płeć_kandydatów.svg](./graphs/Płeć_kandydatów.svg)
+##### Description
+Wykres powyżej przedstawia liczbę kandydatów poszczególnych płci. Można na podstawie tego wywnioskować, że męszczyźni są bardziej zainteresowani polityką niż kobiety.
 
 ### Średnia liczba głosów na płeć
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Średnia_liczba_głosów --ylabel Płeć --mode mean --title Średnia_liczba_głosów_na_płeć
 ```
 ![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
+##### Description
+Powyższy wykres z kolei przedstawia średnią liczbę uzyskanych głósów oddanych na kandydatów w obrębie tej samej płci. Jak widać, męszczyźni nie tylko chętniej biorą czynny udział w polityce, ale też są darzeni większym zaufaniem niż kobiety. Pomimo tego, najwięcej głosów jednak otrzymały dwie kobiety - była Pani premier oraz Pani Jadwiga Wiśniewska.
 
 ### Średnia liczba głosów na zawód
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --mode mean --title Średnia_liczba_głosów_na_zawód --xlabel Średnia_liczba_głosów --ylabel Zawód
 ```
 ![Średnia_liczba_głosów_na_zawód.svg](./graphs/Średnia_liczba_głosów_na_zawód.svg)
+##### Description
 
 ### Liczba kandydatów danego zawodu
 ```
