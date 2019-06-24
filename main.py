@@ -35,7 +35,7 @@ def input_mode():
 
 
 def main():
-    print("Analizator wyników do wyborów do Parlamentu Europejskiego - "
+    print("Analizator danych statystycznych wraz z rysowaniem wykresów - "
           "interactive mode")
 
     while True:

@@ -84,13 +84,12 @@ class BarGraph:
                 proc_data[key] = val['sum']
         proc_data = OrderedDict(sorted(proc_data.items(), key=lambda
             x: x[1], reverse=True))
-        data2 = data
         if self.args_val['select_top'] > -1:
             proc_data = OrderedDict(list(proc_data.items())[:self.args_val[
                 'select_top']])
-            data2 = OrderedDict()
-            for key, value in proc_data.items():
-                data2[key] = data[key]
+        data2 = OrderedDict()
+        for key, value in proc_data.items():
+            data2[key] = data[key]
         if self.args_val['box_plot'] == 1 or (self.args_val['select_key'] !=
                                               '' and len(data) > 0):
             box_plot(data2, self.args_val['title'], self.args_val[
