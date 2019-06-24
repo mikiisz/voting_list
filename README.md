@@ -113,6 +113,13 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Powyższy wykres przedstawia liczbę osób kandydujących do Parlamentu Europejskiego należących do poszczególnych partii. Jak można wywnioskować, pierwsza piątka partii z tego wykresu zgłosiła niemalże maksymalną liczbę swoich kandydatów.
 
+### Głosy na kandydatów partii
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Głosy_na_kandydatów_partii --ylabel Partia --xlabel Głosy_na_poszczególnych_kandydatów --box-plot 1
+```
+![Box_plot_głosy_na_kandydatów_partii.svg](./graphs/Box_plot_głosy_na_kandydatów_partii.svg)
+##### Analiza wykresu
+
 ### Średnia liczba głosów na kandydatów partii
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
@@ -129,6 +136,13 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Wykres powyżej przedstawia liczbę kandydatów poszczególnych płci. Można na podstawie tego wywnioskować, że męszczyźni są bardziej zainteresowani polityką niż kobiety.
 
+### Głosy na kandydatów poszczególnych płci
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Głosy_na_poszczególnych_kandydatów --box-plot 1 --ylabel Płeć --title Głosy_na_kandydatów_poszczególnych_płci
+```
+![Box_plot_głosy_na_kandydatów_poszczególnych_płci.svg](./graphs/Box_plot_głosy_na_kandydatów_poszczególnych_płci.svg)
+##### Analiza wykresu
+
 ### Średnia liczba głosów na płeć
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Średnia_liczba_głosów --ylabel Płeć --mode mean --title Średnia_liczba_głosów_na_płeć
@@ -136,6 +150,13 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
 ##### Analiza wykresu
 Powyższy wykres z kolei przedstawia średnią liczbę uzyskanych głósów oddanych na kandydatów w obrębie tej samej płci. Jak widać, męszczyźni nie tylko chętniej biorą czynny udział w polityce, ale też są darzeni większym zaufaniem niż kobiety. Pomimo tego, najwięcej głosów jednak otrzymały dwie kobiety - była Pani premier oraz Pani Jadwiga Wiśniewska.
+
+### Głosy na kandydatów poszczególnych zawodów
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód
+```
+![Box_plot_głosy_na_kandydatów_poszczególnych_zawodów.svg](./graphs/Box_plot_głosy_na_kandydatów_poszczególnych_zawodów.svg)
+##### Analiza wykresu
 
 ### Średnia liczba głosów na zawód
 ```
