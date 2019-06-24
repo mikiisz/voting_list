@@ -151,7 +151,9 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresów
 Popatrzmy teraz na dwa powyższe wykresy. Na podstawie tego drugiego można wywnioskować, że sporą część kandydatów stanowią przedsiębiorcy, ekonomiści, prawnicy oraz politologowie, jednak żaden z tych zawodów nie uzyskał wystarczającej średniej liczby głosów na kandydata, żeby mógł się znaleść w przodującej dwudziestce jeżeli chodzi o poparcie. Jedynymi zawodami, które znalazły się w obydwu zestawieniach są: zawód parlamentarzysty, historyka, radcy prawa, lekarza, nauczyciela i wykładowcy akademickiego i pedagoga. Przeważnie kandydaci pracujący w tych zawodach są darzeni wysokim zaufaniem ze strony obywateli, ze względu na swoje wykształcenie, znajmość prawa lub po prostu za wykonywanie zawodu związanego z pomocą ludzkości. Z tego powodu dużo osób wykonujących te zawody startuje w wyborach. Na pierwszym wykresie zapewne na pierwszych pozycjach plasują sie zawody mające maksymalnie kilka przedstawicieli, stąd też nie można na podstawie tego określić stopnia zainteresowania wyborców tymi zawodami.
 
-### Box plot dla zawodu ekonomista
+Następne wykresy zostały wygenerowane starszą wersją programu: zmiana polega w odwróceniu osi wykresu.
+
+### Box plot dla zawodu ekonomista (starsza wersja programu)
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key ekonomista --title Box_plot_dla_zawodu_ekonomista --xlabel . --ylabel Liczba_głosów
 ```
@@ -159,7 +161,7 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Na podstawie powyższego wykresu oraz poprzednich można stwierdzić, że pomimo dużej liczby przedstawicieli-kandydatów zawodu ekonomista, jedynie kilka osób cieszy się wysokim poparciem - są to zapewne powszechnie znane osobliwości. Natomiast reszta kandydatów jest mało znana, co psuje średnią liczbę głosów na kandydata tego zawodu. Wszystkie wysnute wnioski potwierdza niska wartość mediany oraz rozstępu międzykwartylowego.
 
-### Box plot dla zawodu nauczyciel akademicki
+### Box plot dla zawodu nauczyciel akademicki (starsza wersja programu)
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key nauczyciel_akademicki --title Box_plot_dla_zawodu_nauczyciel_akademicki --xlabel . --ylabel Liczba_głosów
 ```
@@ -167,7 +169,7 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Podobnie prezentuje się wykres dla zawodu nauczyciel akademicki. Również jest kilku przedstawicieli tego zawodu czieszących sie dużym poparciem, mediana posiada zbliżoną wartość do wykresu poprzedniego. Jednak tutaj można już zaobserwować o wiele wyższą wartość kwartylu górnego, co wskazuje na to, że wielu kandydatów tego zawodu cieszyło niemałym poparciem.
 
-### Box plot dla zawodu polityk
+### Box plot dla zawodu polityk (starsza wersja programu)
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
 ```
@@ -175,7 +177,7 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Na powyższym wykresie już nie widzimy wartości odstających - poparcia na kandydatów tego zawodu są tego samego rzędu wielkości. Mediana utrzymująca się na poziomie 50000 głosów poparcia na kandydata, oraz plasujący się wysoko kwarty górny i dolny mogą świadczyć o wysokim poparciu dla większości kandydatów tego zawodu. Nie ma co się dziwić temu wykresowi - politycy są to osoby powszechnie znane, to też otrzymują przeważną ilość głosów spośród wszystkich oddanych głosów.
 
-### Box plot dla zawodu przedsiębiorca
+### Box plot dla zawodu przedsiębiorca (starsza wersja programu)
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key przedsiębiorca --title Box_plot_dla_zawodu_przedsiębiorca --xlabel . --ylabel Liczba_głosów
 ```
@@ -241,6 +243,9 @@ Do rysowania wykresów należy użyć polecenia ```plot```. Polecenie to przetwa
   --xlabel text - ustawia tytuł osi X jako text
   
   --ylabel text - ustawia tytuł osi Y jako text
+  
+  --box-plot [0(default)/1] - ustawia tryb rysowania wykresów pudełkowych. Włączenie tego
+  trybu oznacza rysowanie wykresów pudełkowych dla ARGUMENTÓW zamiast wykresów słupkowych.
   
 Dla parametrów --select-key, --title, --xlabel, --ylabel, w celu wprowadzenia znaku 
 spacji w opcji danego parametru, należy zastosować znak '_'.
