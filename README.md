@@ -143,6 +143,7 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ```
 ![Box_plot_głosy_na_kandydatów_poszczególnych_płci.svg](./graphs/Box_plot_głosy_na_kandydatów_poszczególnych_płci.svg)
 ##### Analiza wykresu
+Powyższy wykres przedstawia wykresy pudełkowe dla poszczególnych płci, biorąc pod uwagę poparcie dla kandydatów tych płci. Na wykresie można zauważyć, że pomimo większego poparcia dla przodujących w zestawieniu kobiet niż poparcia dla przodujących w zestawieniu męszczyzn, to w przypadku męszczyzn większa liczba kandydatów cieszy się wysokim poparciem niż w przypadku kobiet. Świadczy o tym większa liczba wartości odstających oraz większa wartość kwartylu górnego. Jednak w obu przypadkach mediana jest na bardzo niskim poziomie, co przekłada się na to, że połowa kandydatów w przypadku obu płci jest mało znana, przez co zyskała znikome poparcie.
 
 ### Średnia liczba głosów na płeć
 ```
