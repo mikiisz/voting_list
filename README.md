@@ -113,6 +113,14 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Powyższy wykres przedstawia liczbę osób kandydujących do Parlamentu Europejskiego należących do poszczególnych partii. Jak można wywnioskować, pierwsza piątka partii z tego wykresu zgłosiła niemalże maksymalną liczbę swoich kandydatów.
 
+### Głosy na kandydatów partii
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Głosy_na_kandydatów_partii --ylabel Partia --xlabel Głosy_na_poszczególnych_kandydatów --box-plot 1
+```
+![Box_plot_głosy_na_kandydatów_partii.svg](./graphs/Box_plot_głosy_na_kandydatów_partii.svg)
+##### Analiza wykresu
+Powyższy wykres przedstawia wykresy pudełkowe dla poszczególnych partii, biorąc pod uwagę liczbę głosów oddanych na kandydatów należących do tych partii. Jak można łatwo zauważyć, w porównaniu znacząco przodują przedstawiciele Prawa i Sprawiedliwości oraz Koalicji Europejskiej. Duża ilość wartości odstających dla tych partii mówi o dużej liczbie kandydatów, którzy znacząco przodują w obrębie tych partii, i to zapewnie oni zostaną wybrani do Parlamentu Europejskiego. Ilość takich kandydatów jest niemalże taka sama dla obu partii. Pomimo, że najwięcej głosów uzyskała Pani Beata Szydło z Prawa i Sprawiedliwości, to liczba kandydatów, która cieszyła się wysokim poparciem jest większa w przypadku Koalicji Europejskiej. Świadczy o tym większa wartość kwartylu górnego oraz wyliczonej wartości maksymalnej. Natomiast mniejsza wartość mediany dla tej partii świadczy o tym, że było również wiele kandydatów, którzy uzyskali niskie poparcie. Mniejszy rozstęp międzykwartylowy dla Prawa i Sprawiedliwości mówi o tym, że bardzo duża liczba kandydatów uzyskała podobne, średnie poparcie. W przypadku pozostałych partii również występują liczne wartości odstające, jednak poparcie dla tych kandydatów jest znacząco mniejsze niż w przypadku dwóch czołowych partii. Ponadto, rozstępy międzykwartylowe dla tych partii są ulokowane bardzo nisko i są bardzo małe, co świadczy o znikomym poparciu dla znaczącej większości kandydatów tych partii.
+
 ### Średnia liczba głosów na kandydatów partii
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
@@ -129,6 +137,14 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ##### Analiza wykresu
 Wykres powyżej przedstawia liczbę kandydatów poszczególnych płci. Można na podstawie tego wywnioskować, że męszczyźni są bardziej zainteresowani polityką niż kobiety.
 
+### Głosy na kandydatów poszczególnych płci
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Głosy_na_poszczególnych_kandydatów --box-plot 1 --ylabel Płeć --title Głosy_na_kandydatów_poszczególnych_płci
+```
+![Box_plot_głosy_na_kandydatów_poszczególnych_płci.svg](./graphs/Box_plot_głosy_na_kandydatów_poszczególnych_płci.svg)
+##### Analiza wykresu
+Powyższy wykres przedstawia wykresy pudełkowe dla poszczególnych płci, biorąc pod uwagę poparcie dla kandydatów tych płci. Na wykresie można zauważyć, że pomimo większego poparcia dla przodujących w zestawieniu kobiet niż poparcia dla przodujących w zestawieniu męszczyzn, to w przypadku męszczyzn większa liczba kandydatów cieszy się wysokim poparciem niż w przypadku kobiet. Świadczy o tym większa liczba wartości odstających oraz większa wartość kwartylu górnego. Jednak w obu przypadkach mediana jest na bardzo niskim poziomie, co przekłada się na to, że połowa kandydatów w przypadku obu płci jest mało znana, przez co zyskała znikome poparcie.
+
 ### Średnia liczba głosów na płeć
 ```
 $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Średnia_liczba_głosów --ylabel Płeć --mode mean --title Średnia_liczba_głosów_na_płeć
@@ -136,6 +152,13 @@ $> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizon
 ![Średnia_liczba_głosów_na_płeć.svg](./graphs/Średnia_liczba_głosów_na_płeć.svg)
 ##### Analiza wykresu
 Powyższy wykres z kolei przedstawia średnią liczbę uzyskanych głósów oddanych na kandydatów w obrębie tej samej płci. Jak widać, męszczyźni nie tylko chętniej biorą czynny udział w polityce, ale też są darzeni większym zaufaniem niż kobiety. Pomimo tego, najwięcej głosów jednak otrzymały dwie kobiety - była Pani premier oraz Pani Jadwiga Wiśniewska.
+
+### Głosy na kandydatów poszczególnych zawodów
+```
+$> plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód
+```
+![Box_plot_głosy_na_kandydatów_poszczególnych_zawodów.svg](./graphs/Box_plot_głosy_na_kandydatów_poszczególnych_zawodów.svg)
+##### Analiza wykresu
 
 ### Średnia liczba głosów na zawód
 ```
