@@ -142,3 +142,66 @@ plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal
 plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --xaxis 2 --yaxis-left 5 --yaxis-right 6 --yaxis-top 0 --yaxis-bottom 2496 --select-top 20 --title Liczba_głosów_nieważnych_na_terytorium --xlabel Liczba_głosów --ylabel Jednostka_terytorialna
 plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia
 plot --csv-file-path ../parties/joined_parties.csv --xaxis-mode horizontal --xaxis 2 --yaxis-left 5 --yaxis-right 6 --yaxis-top 0 --yaxis-bottom 2496 --select-top 20 --title Liczba_głosów_nieważnych_na_terytorium --xlabel Liczba_głosów --ylabel Jednostka_terytorialna
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 0
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Średnia_liczba_głosów_na_kandydatów_partii --xlabel Średnia_liczba_głosów --ylabel Partia --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Średnia_liczba_głosów --ylabel Płeć --mode mean --title Średnia_liczba_głosów_na_płeć --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 3 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --mode mean --title Głosy_na_kandydatów_partii --ylabel Partia --xlabel Głosy_na_poszczególnych_kandydatów --box-plot 1
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 6 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --xlabel Głosy_na_poszczególnych_kandydatów --box-plot 1 --ylabel Płeć --title Głosy_na_kandydatów_poszczególnych_płci
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mea 
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityka
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+exit
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód --mode mean 
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-top 20 --box-plot 1 --title Głosy_na_kandydatów_poszczególnych_zawodów --xlabel Głosy_na_poszczególnych_kandydatów --ylabel Zawód
+plot --csv-file-path ../candidates/joined_candidates.csv --xaxis-mode horizontal --xaxis 7 --yaxis-left 8 --yaxis-right 9 --yaxis-top 0 --yaxis-bottom 866 --select-key polityk --title Box_plot_dla_zawodu_polityk --xlabel . --ylabel Liczba_głosów
+exit

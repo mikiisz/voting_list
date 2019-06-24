@@ -1,13 +1,26 @@
 import matplotlib.pyplot as plt
+from collections import OrderedDict
+import numpy as np
 
 
-def box_plot(values, title, xlabel, ylabel):
-    _, axs = plt.subplots()
-    axs.set_title(title)
-    axs.boxplot(values)
-    axs.set_xlabel(xlabel)
-    axs.set_ylabel(ylabel)
-
+def box_plot(data, title, xlabel, ylabel):
+    new_data = OrderedDict()
+    max_len = 25
+    for key, val in data.items():
+        if len(key) > max_len:
+            index = max_len - (key[:max_len])[::-1].find(' ')
+            key = key[:index - 1] + '\n' + key[index:]
+        new_data[key] = list(map(int, val))
+    plot_keys = [''] + list(new_data.keys())
+    fig, ax = plt.subplots()
+    ax.set_title(title)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    plt.boxplot(new_data.values(), vert=False)
+    plt.yticks(range(len(new_data)+1), plot_keys)
+    plt.tight_layout()
+    ax.invert_yaxis()
+    plt.subplots_adjust(left=0.25)
     plt.show()
 
 

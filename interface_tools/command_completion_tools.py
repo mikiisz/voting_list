@@ -17,7 +17,8 @@ available_expressions = {
         '--select-key': {},
         '--title': {},
         '--xlabel': {},
-        '--ylabel': {}
+        '--ylabel': {},
+        '--box-plot': {'0': 0, '1': 1}
     },
     "help": {},
     "exit": {}

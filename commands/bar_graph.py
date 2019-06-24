@@ -1,6 +1,7 @@
 from plot_tools.plot_bar_graph import *
 from csv_tools.bar_graph_data import *
 from box_plot import box_plot
+from statistics import mean
 from interface_tools.command_completion_tools import available_expressions
 
 
@@ -22,7 +23,8 @@ class BarGraph:
             'select_key': '',
             'title': 'Wykres',
             'xlabel': 'Oś X',
-            'ylabel': 'Oś Y'
+            'ylabel': 'Oś Y',
+            'box_plot': 0
         }
 
         # acceptable arguments
@@ -40,7 +42,8 @@ class BarGraph:
             '--select-key': 'select_key',
             '--title': 'title',
             '--xlabel': 'xlabel',
-            '--ylabel': 'ylabel'
+            '--ylabel': 'ylabel',
+            '--box-plot': 'box_plot'
         }
 
         # list of arguments whose can be list
@@ -81,16 +84,21 @@ class BarGraph:
                 proc_data[key] = val['sum']
         proc_data = OrderedDict(sorted(proc_data.items(), key=lambda
             x: x[1], reverse=True))
+        data2 = data
         if self.args_val['select_top'] > -1:
             proc_data = OrderedDict(list(proc_data.items())[:self.args_val[
                 'select_top']])
-        if self.args_val['select_key'] != '':
-            for key, val in data.items():
-                box_plot(list(map(int, val)), self.args_val['title'], self.args_val[
+            data2 = OrderedDict()
+            for key, value in proc_data.items():
+                data2[key] = data[key]
+        if self.args_val['box_plot'] == 1 or (self.args_val['select_key'] !=
+                                              '' and len(data) > 0):
+            box_plot(data2, self.args_val['title'], self.args_val[
                 'xlabel'], self.args_val['ylabel'])
         else:
-            make_bar_graph(proc_data, self.args_val['title'], self.args_val[
-                'xlabel'], self.args_val['ylabel'])
+            if self.args_val['select_key'] == '':
+                make_bar_graph(proc_data, self.args_val['title'], self.args_val[
+                    'xlabel'], self.args_val['ylabel'])
         pass
 
     # parsing input arguments
@@ -109,7 +117,8 @@ class BarGraph:
             'select_key': '',
             'title': 'Wykres',
             'xlabel': 'Oś X',
-            'ylabel': 'Oś Y'
+            'ylabel': 'Oś Y',
+            'box_plot': 0
         }
 
         for i, item in enumerate(args):
